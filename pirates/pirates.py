@@ -12,10 +12,15 @@ pirates = [
 # - have more than 15 gold
 
 def pirate_selector(list_of_pirates):
-    selected_pirates = []
-    for element in list_of_pirates:
-        if element["has_wooden_leg"] == True and element["gold"] >= 15:
-            selected_pirates.append(element["Name"])
-    return selected_pirates
+    try:
+        selected_pirates = []
+        for element in list_of_pirates:
+            if element["has_wooden_leg"] == True and element["gold"] >= 15:
+                selected_pirates.append(element["Name"])
+        return selected_pirates
+    except NameError:
+        return "Please add a list with the available pirates"
+    except TypeError:
+        return "Please add a list with the available pirates"
 
 print(pirate_selector(pirates))
