@@ -32,4 +32,4 @@ The application is accepted if:
 ## 5. Question time! (~15 mins) [2p]
 
 ### How can you generate a random number? [2p]
-#### Your answer: [add your answer here]
+#### Your answer: [I have to import the python random module, than I can set the range of the numbers with the random.randrange method. I can set a variable to random.randrange so that variable will be a random number.] 
